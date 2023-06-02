@@ -1,0 +1,242 @@
+
+@charset "UTF-8";
+@font-face {                 /*Utlizando o font-face para colocar uma fonte externa ao projeto*/ 
+    font-family: 'cosmo';
+    src: url(fonte/SocialLogos.ttf) ;
+}
+
+body{
+    background-color: #252525;
+width: 100%;
+margin: 0 auto;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    vertical-align: baseline;
+    list-style: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+header{
+    display: flex; /* responsavel por colocar os itens na mesma linha (lado a lado)*/
+    align-items: center; /* alinhar os itens no nosso header para o centro*/
+    justify-content: space-evenly;  /* tradução justificar-conteudo: espaço uniformente. align */
+    padding: 15px; /* cuida do preenchimento*/
+    background-color: #181717; /* cor de fundo dp nosso cabeçalho/header*/
+    overflow: hidden; /**/
+    line-height: 200px; /* altura*/
+    max-height: 200px;  /* Altura máxima*/
+}
+
+header > h1 {  /* selecionar aqui a cor da letra do nosso h1 ou seja,do nosso titulo*/
+    font-size: 40px;
+    font-family: 'cosmo';
+    color: white; /* chamamos a propriedade color e definimos uma cor em questão*/
+}
+
+header > img { /* aqui estamos chamando nossa imagem para ser atribuidas alterações*/
+    width: 200px; /* largura da nossa imagem*/
+    height: 150px; /* tamanho da nossa imagem*/
+}
+
+#menu-header { /* njosso menu de navegação*/
+    
+    display: flex; /* responsavel por colocar os itens na mesma linha (lado a lado)*/
+    align-items: flex; /* alinhar os itens do nosso header para o centro*/
+}
+
+#list-menu { /* nossa lista não ordenad, aqui mudaremos diretamente nossa lista*/
+    display: flex; /* responsavel por colocar os itens na mesma linha (lado a lado)*/ 
+    margin-right: 1rem; /* margem da direita. 1 REM aquivale a 16px, ou seja podemos usa-lo  para facilitar a inserção dos pixels */
+}
+
+.item-menu-header{  /*nossas li que estão dentro do list menu, onde se encontram os nomes dos itens */
+    margin-right: 25px; /* margem da direita*/
+}
+
+.item-menu-header > a:houver { /* Nossas ço qie estão dentro do list menu, (a) nossa tag de linha*/
+    color: yellow;  /* aqui atribuidas uma cor*/
+    transition: 1s; /* e o tempo em que sera exibido ao passar o cursor*/
+}
+
+.item-menu-header > a { /*nossas li que estão dentro do list menu. (a) nossa tag de link que é*/
+    color: white; /* cor das letras*/
+    text-decoration: none; /* responsavel  por tirar o sublimado inferior que estava visivel*/
+    font-size: 12px; /* tamanho da letra*/
+
+}
+
+#btn-header { /* Nossa ID do botão de login*/
+    display: flex; /* responsavel por colocar os itens na mesma linha (lado a lado)*/
+}
+
+#btn-header > button { /* Aqui chamamos nossa ID e onde queremos fazer alterações, no caso */
+    padding: 8px; /* cuida do preenchimento*/
+    background-color: transparent; /* aqui deixamoso fundo do botão transparent, ou seja sem o fundo*/
+    border: none; /* none é usado para retirar algp, nesse caso a borda*/
+}
+
+#btn-header > button > a { /* estamos chamando aqui nossa tag de link para alterações*/
+    display: flex; /* responsavel por colocar os itens da mesma linha (lado a lado)*/
+    align-items: center; /* alinhar os itens para o centro*/
+    color: white;
+    text-decoration: none;
+}
+
+#btn-hearder > button > a > img { /* aqui estamos mexendo no icon do botao */
+    width: 38px; /* largura*/
+    height: 38px; /* tamanho*/
+    margin-right: 2px; /* margem da direita*/
+
+}
+
+#img-destaque{ /*aqui chamamos a id que chamamos no html*/
+   
+    padding: 280px; /* cuida do preenchimento */
+   background-image: url(img/padaria.webp); /* usada para inserir imagens de fundo*/
+    background-position: center; /* Aqui posicionamos nossa iomagem para o centro*/
+}
+
+.img-div{ /*aqui chamamos nossa class para aleração*/
+  
+    padding: 25px; /*cuida do preenchimento*/
+    background-image: url(img/img-div.jpg); /* usadas para inserir imagem de fundo*/
+    background-position: center; /* aqui posicionamos nossa imagem para o centro*/
+    background-size: auto; /* backgroud-size: especifica o tamanho das imagens de fundo*/
+}
+
+
+#clients {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.line {
+  display: block;
+  margin-top: 0.05em;
+  margin-bottom: 0.05em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: solid;
+  border-width: 1px;
+  width: 200px;;
+ 
+}
+
+#clients-list{
+   justify-content: space-evenly;
+   display: flex;
+   align-items: center;
+   padding: 15px;
+   overflow: hidden;
+   margin-top: 20px;
+   margin-bottom: 40px;
+}
+
+ #featured-products{
+ background: linear-gradient(180deg, #f4CEAF 8.53%, rgb(244,200, 175, 0) 100%);
+ padding: 30px;
+ 
+}
+
+.products{
+    margin-top: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.title-products{
+    margin-top: 10px;
+    text-align: center;
+    font-family: 'Ubuntu','sans-serif';
+    font-size: 22px;
+    
+
+}
+
+#featured-products > h2 {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#featured-products > a {
+    text-decoration: none;
+    color: red;
+    font-size: 20px;
+    font-family: 'Ubuntu','sans-serif';
+}
+
+#featured-products > a:hover{ 
+    text-decoration: underline;
+    font-size: 22px;
+    transition: 1s;
+}
+
+#sobre-nos {
+    background-image: url(/CODIGO/img/fundo-sobre-nos.jpg);
+    background-repeat: no-repeat; /*aqui colocamos a função paraa imagem não seja reétoda */
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    padding: 120px;
+}
+
+#sobre-nos > h3 {
+    color: white;  /* */
+    font-size: 64px;  /* */
+    text-align: center;  /* */
+    font-family: 'ubuntu', 'sans-serif';  /* */
+}
+ 
+#sobre-nos > p {
+    font-family: 'ubuntu', 'sans-serif';  /* */
+    font-weight: 500;  /* */
+    color: white;  /* */
+    font-size: 22px;  /* */
+    margin-top: 2em;  /* */ 
+    text-align: left;  /* */
+}
+
+#contatos{
+    background-image: url(img/img-footer.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    padding: 80px;
+}
+
+footer > ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer > h2 {
+    color: black bold;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.item-menu-footer {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.item-menu-footer > img {
+    width: 34px;
+    height: 34px;
+}
+
+.item-menu-footer > p {
+    color: black bold;
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
