@@ -6,7 +6,8 @@
 }
 
 body{
-    background-color: #252525;
+    color: #f3f3f3;
+    background-color: #505050;
 width: 100%;
 margin: 0 auto;
 }
@@ -25,7 +26,7 @@ header{
     align-items: center; /* alinhar os itens no nosso header para o centro*/
     justify-content: space-evenly;  /* tradução justificar-conteudo: espaço uniformente. align */
     padding: 15px; /* cuida do preenchimento*/
-    background-color: #181717; /* cor de fundo dp nosso cabeçalho/header*/
+    background-color: rgb(61, 60, 60);
     overflow: hidden; /**/
     line-height: 200px; /* altura*/
     max-height: 200px;  /* Altura máxima*/
@@ -96,7 +97,7 @@ header > img { /* aqui estamos chamando nossa imagem para ser atribuidas altera�
 #img-destaque{ /*aqui chamamos a id que chamamos no html*/
    
     padding: 280px; /* cuida do preenchimento */
-   background-image: url(img/padaria.webp); /* usada para inserir imagens de fundo*/
+   background-image: url(img/BCK-NBA.jpg); /* usada para inserir imagens de fundo*/
     background-position: center; /* Aqui posicionamos nossa iomagem para o centro*/
 }
 
@@ -137,7 +138,7 @@ header > img { /* aqui estamos chamando nossa imagem para ser atribuidas altera�
 }
 
  #featured-products{
- background: linear-gradient(180deg, #f4CEAF 8.53%, rgb(244,200, 175, 0) 100%);
+ background: linear-gradient(180deg, #505050 8.53%, rgb(244,200, 175, 0) 100%);
  padding: 30px;
  
 }
