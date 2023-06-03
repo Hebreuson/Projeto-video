@@ -2,17 +2,23 @@
 @charset "UTF-8";
 @font-face {                 /*Utlizando o font-face para colocar uma fonte externa ao projeto*/ 
     font-family: 'cosmo';
-    src: url(fonte/SocialLogos.ttf) ;
+    src: url(fonte/NexaRustSans-Trial-Black2.ttf) ;
+}
+
+@font-face {                 /*Utlizando o font-face para colocar uma fonte externa ao projeto*/ 
+    font-family: 'legends';
+    src: url(fonte/PIYE\ KEK\ Regular.otf) ;
 }
 
 body{
     color: #f3f3f3;
-    background-color: #505050;
-width: 100%;
-margin: 0 auto;
+    background-color: #242323;
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'cosmo';
 }
 
-*{
+*{  
     padding: 0;
     margin: 0;
     vertical-align: baseline;
@@ -20,27 +26,24 @@ margin: 0 auto;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-
 header{
     display: flex; /* responsavel por colocar os itens na mesma linha (lado a lado)*/
     align-items: center; /* alinhar os itens no nosso header para o centro*/
     justify-content: space-evenly;  /* tradução justificar-conteudo: espaço uniformente. align */
     padding: 15px; /* cuida do preenchimento*/
-    background-color: rgb(61, 60, 60);
+    background-color: black;
     overflow: hidden; /**/
     line-height: 200px; /* altura*/
-    max-height: 200px;  /* Altura máxima*/
-}
-
-header > h1 {  /* selecionar aqui a cor da letra do nosso h1 ou seja,do nosso titulo*/
-    font-size: 40px;
-    font-family: 'cosmo';
-    color: white; /* chamamos a propriedade color e definimos uma cor em questão*/
+    max-height: 30px;  /* Altura máxima*/
+    min-height: 100%;
+    position: relative;
 }
 
 header > img { /* aqui estamos chamando nossa imagem para ser atribuidas alterações*/
-    width: 200px; /* largura da nossa imagem*/
-    height: 150px; /* tamanho da nossa imagem*/
+    width: 100px; /* largura da nossa imagem*/
+    height: 70px; /* tamanho da nossa imagem*/
+    background-position: center;
+    background-repeat: no-repeat; /*aqui colocamos a função paraa imagem não seja reétoda */
 }
 
 #menu-header { /* njosso menu de navegação*/
@@ -103,28 +106,26 @@ header > img { /* aqui estamos chamando nossa imagem para ser atribuidas altera�
 
 .img-div{ /*aqui chamamos nossa class para aleração*/
   
-    padding: 25px; /*cuida do preenchimento*/
-    background-image: url(img/img-div.jpg); /* usadas para inserir imagem de fundo*/
+    padding: 30px; /*cuida do preenchimento*/
+  background-color: black; /* usadas para inserir imagem de fundo*/
     background-position: center; /* aqui posicionamos nossa imagem para o centro*/
     background-size: auto; /* backgroud-size: especifica o tamanho das imagens de fundo*/
-}
+    background-position: center;
+    background-repeat: no-repeat; /*aqui colocamos a função paraa imagem não seja reétoda */
+    background-attachment: fixed;
+    background-size: cover;
 
+}
 
 #clients {
   margin-top: 30px;
   text-align: center;
 }
 
-.line {
-  display: block;
-  margin-top: 0.05em;
-  margin-bottom: 0.05em;
-  margin-left: auto;
-  margin-right: auto;
-  border-style: solid;
-  border-width: 1px;
-  width: 200px;;
- 
+#clients > h2{
+    
+    color: #ffffff;
+    font-size: 50px;
 }
 
 #clients-list{
@@ -137,8 +138,15 @@ header > img { /* aqui estamos chamando nossa imagem para ser atribuidas altera�
    margin-bottom: 40px;
 }
 
+.clients-item > img{
+    width: 200px;
+    height: 250px;
+    border-radius: 50%;
+    border: solid white 3px;
+}
+
  #featured-products{
- background: linear-gradient(180deg, #505050 8.53%, rgb(244,200, 175, 0) 100%);
+
  padding: 30px;
  
 }
@@ -150,14 +158,18 @@ header > img { /* aqui estamos chamando nossa imagem para ser atribuidas altera�
     justify-content: space-evenly;
 }
 
+.videos{
+    border-radius: 5%;
+    border: solid #505050;
+    width: 400px;
+    height: 250px;
+}
 
 .title-products{
     margin-top: 10px;
     text-align: center;
     font-family: 'Ubuntu','sans-serif';
     font-size: 22px;
-    
-
 }
 
 #featured-products > h2 {
@@ -170,7 +182,9 @@ header > img { /* aqui estamos chamando nossa imagem para ser atribuidas altera�
     color: red;
     font-size: 20px;
     font-family: 'Ubuntu','sans-serif';
+    
 }
+ 
 
 #featured-products > a:hover{ 
     text-decoration: underline;
