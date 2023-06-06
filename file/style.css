@@ -12,10 +12,10 @@
 
 body{
     color: #f3f3f3;
-    background-color: #242323;
+    background-color: rgb(32, 31, 31);
     width: 100%;
     margin: 0 auto;
-    font-family: 'cosmo';
+    
 }
 
 *{  
@@ -23,7 +23,7 @@ body{
     margin: 0;
     vertical-align: baseline;
     list-style: none;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
 }
 
 header{
@@ -123,9 +123,9 @@ header > img { /* aqui estamos chamando nossa imagem para ser atribuidas altera�
 }
 
 #clients > h2{
-    
     color: #ffffff;
     font-size: 50px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #clients-list{
@@ -160,7 +160,7 @@ header > img { /* aqui estamos chamando nossa imagem para ser atribuidas altera�
 
 .videos{
     border-radius: 5%;
-    border: solid #505050;
+    border: solid #f3f3f3 3px;
     width: 400px;
     height: 250px;
 }
@@ -168,20 +168,24 @@ header > img { /* aqui estamos chamando nossa imagem para ser atribuidas altera�
 .title-products{
     margin-top: 10px;
     text-align: center;
-    font-family: 'Ubuntu','sans-serif';
-    font-size: 22px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    color: white;
+    margin-bottom: 100px;
 }
 
 #featured-products > h2 {
+    
     text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #featured-products > a {
+    
     text-decoration: none;
     color: red;
     font-size: 20px;
-    font-family: 'Ubuntu','sans-serif';
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     
 }
  
@@ -193,7 +197,7 @@ header > img { /* aqui estamos chamando nossa imagem para ser atribuidas altera�
 }
 
 #sobre-nos {
-    background-image: url(/CODIGO/img/fundo-sobre-nos.jpg);
+    background-image: url(img/back.jpg);
     background-repeat: no-repeat; /*aqui colocamos a função paraa imagem não seja reétoda */
     background-attachment: fixed;
     background-position: center;
@@ -205,42 +209,48 @@ header > img { /* aqui estamos chamando nossa imagem para ser atribuidas altera�
     color: white;  /* */
     font-size: 64px;  /* */
     text-align: center;  /* */
-    font-family: 'ubuntu', 'sans-serif';  /* */
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  /* */
 }
  
 #sobre-nos > p {
-    font-family: 'ubuntu', 'sans-serif';  /* */
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  /* */
     font-weight: 500;  /* */
     color: white;  /* */
     font-size: 22px;  /* */
     margin-top: 2em;  /* */ 
-    text-align: left;  /* */
+    text-align: center;  /* */
+   
 }
 
 #contatos{
-    background-image: url(img/img-footer.jpg);
-    background-position: bottom;
-    background-repeat: no-repeat;
-    padding: 80px;
+   
+     padding: 100px;
+    height: 100px;
+}
+
+footer{
+    height: 50px;
 }
 
 footer > ul {
-    display: flex;
+
     justify-content: space-evenly;
 }
 
 footer > h2 {
     color: black bold;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: bold;
     text-align: center;
     margin-bottom: 1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .item-menu-footer {
     display: flex;
-    align-items: center;
+    align-items:center;
     margin-top: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .item-menu-footer > img {
@@ -250,8 +260,29 @@ footer > h2 {
 
 .item-menu-footer > p {
     color: black bold;
-    font-size: 24px;
+    font-size: 15px;
     font-weight: bold;
     margin-left: 10px;
 }
 
+.img-footer{
+    margin-bottom: 1px;
+    padding: 2px; /*cuida do preenchimento*/
+    background-color: #505050; /* usadas para inserir imagem de fundo*/
+    background-position: center; /* aqui posicionamos nossa imagem para o centro*/
+    background-size: auto; /* backgroud-size: especifica o tamanho das imagens de fundo*/
+    background-position: center;
+    background-repeat: no-repeat; /*aqui colocamos a função paraa imagem não seja reétoda */
+    background-attachment: fixed;
+    background-size: cover;  
+}
+
+#bck-footer{
+    background-color: black;
+    background-position: center; /* aqui posicionamos nossa imagem para o centro*/
+    background-size: auto; /* backgroud-size: especifica o tamanho das imagens de fundo*/
+    background-position: center;
+    background-repeat: no-repeat; /*aqui colocamos a função paraa imagem não seja reétoda */
+    background-attachment: fixed;
+    background-size: cover;  
+}
